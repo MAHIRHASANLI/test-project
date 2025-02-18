@@ -61,7 +61,7 @@ function Dashboard() {
                 <TableCell align="left">{item.rating.count}</TableCell>
                 <TableCell align="left">
                   <Button variant="outlined" color="success">
-                    Update
+                    <Link to={`/product/${item.id}`}>Update</Link>
                   </Button>
                 </TableCell>
                 <TableCell align="left" onClick={() => handleDelete(item.id)}>

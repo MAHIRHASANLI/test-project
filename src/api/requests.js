@@ -25,3 +25,14 @@ export const postProduct = async (product) => {
      })
      return await response.json
 }
+
+export const updateProduct = async (id, product) => {
+     const response = await fetch(`${baseUrl}/${id}`, {
+          method: "PUT",
+          headers: {
+               'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(product)
+     })
+     return await response.json();
+}
