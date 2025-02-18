@@ -1,0 +1,14 @@
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.add-btn {
+  margin: 30px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+}
